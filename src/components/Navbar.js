@@ -65,21 +65,7 @@ function Navbar({ dark, setDark }) {
               </li>
             ))}
           </ul>
-          {/* Social links always in a line for mobile */}
-          <div className="flex flex-row justify-center items-center gap-4 py-2 px-6 border-t border-gray-200 dark:border-gray-800">
-            {socialLinks.map(link => (
-              <a
-                key={link.href}
-                href={link.href}
-                target={link.href.startsWith('http') ? "_blank" : undefined}
-                rel={link.href.startsWith('http') ? "noopener noreferrer" : undefined}
-                className="hover:text-blue-600 dark:hover:text-blue-400 text-gray-900 dark:text-white"
-                onClick={() => setMenuOpen(false)}
-              >
-                {link.label}
-              </a>
-            ))}
-          </div>
+          
         </div>
       )}
     </nav>
