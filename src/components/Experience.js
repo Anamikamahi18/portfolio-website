@@ -9,7 +9,7 @@ function Experience() {
       icon: <FaBriefcase className="text-blue-600" />,
       title: 'Full Stack Web Developer Intern',
       org: 'MashupStack, Thiruvananthapuram',
-      date: '2025',
+      date: 'Sep 2024 - Apr 2025',
       desc: 'Worked on full stack web applications using React and Django.',
     },
     {
@@ -17,7 +17,7 @@ function Experience() {
       icon: <FaGraduationCap className="text-green-600" />,
       title: 'M.Sc. Mathematics',
       org: 'Mar Ivanios College, Thiruvananthapuram',
-      date: '2023',
+      date: '2021 - 2023',
       desc: 'Master of Science in Mathematics.',
     },
     {
@@ -25,7 +25,7 @@ function Experience() {
       icon: <FaGraduationCap className="text-green-600" />,
       title: 'B.Sc. Mathematics',
       org: 'Mar Ivanios College, Thiruvananthapuram',
-      date: '',
+      date: '2018 - 2021',
       desc: 'Bachelor of Science in Mathematics.',
     },
   ];
@@ -49,13 +49,13 @@ function Experience() {
                 <div className="z-10 w-12 h-12 flex items-center justify-center bg-white border-2 border-blue-200 rounded-full shadow text-2xl absolute left-0 top-0">
                   {item.icon}
                 </div>
-                <div className="ml-20 bg-white rounded-lg p-4 sm:p-6 shadow hover:shadow-lg transition-shadow duration-300 w-full">
+                <div className="ml-20 bg-white dark:bg-gray-800 rounded-lg p-4 sm:p-6 shadow hover:shadow-lg transition-shadow duration-300 w-full">
                   <div className="flex justify-between items-center mb-1">
-                    <h3 className="font-semibold text-lg">{item.title}</h3>
-                    <span className="text-xs text-gray-500">{item.date}</span>
+                    <h3 className="font-semibold text-lg dark:text-white">{item.title}</h3>
+                    <span className="text-xs text-gray-500 dark:text-gray-300">{item.date}</span>
                   </div>
-                  <div className="text-blue-700 font-medium mb-1">{item.org}</div>
-                  <div className="text-gray-600 text-sm">{item.desc}</div>
+                  <div className="text-blue-700 dark:text-blue-300 font-medium mb-1">{item.org}</div>
+                  <div className="text-gray-600 dark:text-gray-200 text-sm">{item.desc}</div>
                 </div>
               </li>
             ))}

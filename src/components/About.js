@@ -48,13 +48,13 @@ function About() {
   ]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
-
-  const handleSend = async (e) => {
-    e.preventDefault();
-    if (!input.trim()) return;
-    setMessages([...messages, { from: "user", text: input }]);
-    setLoading(true);
-
+          <a
+            href={process.env.PUBLIC_URL + '/ANAMIKA M-Resume.pdf'}
+            download
+            className="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition mb-6 w-full sm:w-auto text-center"
+          >
+            Download Resume
+          </a>
     // Fuzzy match the question
     const userQ = input.trim().toLowerCase();
     let answer = null;
@@ -74,7 +74,7 @@ function About() {
       }
     }
     if (!answer) {
-      answer = "Sorry, I can only answer questions about Anamika M's profile, Education, Experience, skills, projects, LinkedIn, and GitHub.";
+      answer = "Sorry, I can only answer questions about Anamika M's profile, Education, Experience, skills, projects, Contact, LinkedIn, and GitHub.";
     }
 
     setTimeout(() => {
@@ -97,26 +97,13 @@ function About() {
       transition={{ duration: 0.8, ease: 'easeOut' }}
     >
       <div className="container mx-auto flex flex-col md:flex-row gap-10 items-center px-4 sm:px-8">
-        {/* Single Profile Photo with hover effect */}
-        <img
-          src="/profile.png"
-          alt="Anamika M"
-          loading="lazy"
-          className="w-32 h-32 sm:w-40 sm:h-40 rounded-full object-cover border-4 border-white shadow-lg transition-transform duration-300 hover:scale-105 mb-6 md:mb-0"
-        />
         <div className="w-full max-w-xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-blue-700">About Me</h2>
-          <p className="mb-2 text-base sm:text-lg">Hi, I'm <span className="font-semibold">Anamika M.</span></p>
+          <p className="mb-2 text-base sm:text-lg">I'm <span className="font-semibold">Anamika M.</span></p>
           <p className="mb-2 text-base">Full Stack Developer Intern at <span className="font-semibold">MashupStack</span></p>
           <p className="mb-2 text-base">M.Sc. Mathematics, Mar Ivanios College, Thiruvananthapuram</p>
           <p className="mb-4 text-base">I enjoy building apps with <span className="font-semibold">React</span> & <span className="font-semibold">Django</span>, and I'm passionate about learning new technologies and solving real-world problems. My goal is to create impactful digital experiences with clean, efficient code.</p>
-          <a
-            href="/ANAMIKA M-Resume.pdf"
-            download
-            className="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition mb-6 w-full sm:w-auto text-center"
-          >
-            Download Resume
-          </a>
+          
           {/* Chatbot/Interactive Q&A */}
           <div className="mt-6 bg-white dark:bg-gray-800 rounded-lg shadow p-4 w-full">
             <div className="font-semibold mb-2 text-blue-700 dark:text-blue-300">Ask Me Anything!</div>
@@ -157,6 +144,6 @@ function About() {
       </div>
     </motion.section>
   );
-}
+
 
 export default About;
