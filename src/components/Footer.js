@@ -9,6 +9,7 @@ function Footer() {
       <div className="mt-2 flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-4">
         <a href="https://github.com/Anamikamahi18" target="_blank" rel="noopener noreferrer">GitHub</a>
         <a href="https://linkedin.com/in/anamika-m-16a09321b" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:anamikamahi18@gmail.com" className="hover:text-blue-600">Email</a>
       </div>
     </footer>
   );

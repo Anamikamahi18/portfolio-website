@@ -41,11 +41,7 @@ function Hero() {
   <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-4 w-full justify-center items-center">
           <a href="#projects" className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">View My Work</a>
         </div>
-  <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full justify-center items-center">
-          <a href="https://github.com/Anamikamahi18" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600">GitHub</a>
-          <a href="https://linkedin.com/in/anamika-m-16a09321b" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600">LinkedIn</a>
-          <a href="mailto:anamikamahi18@gmail.com" className="hover:text-blue-600">Email</a>
-        </div>
+ 
       </div>
     </motion.section>
   );

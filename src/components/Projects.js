@@ -6,36 +6,11 @@ function Projects() {
   // Only show specified projects
   const projects = [
     {
-      name: 'Daily Water Intake Tracker',
-      description: 'Track your daily water intake and hydration stats. Built with React and Django REST API.',
-      tags: ['React', 'Django', 'API', 'Health'],
-      github: 'https://github.com/Anamikamahi18/Water-Intake-Tracker',
-      demo: 'https://github.com/Anamikamahi18/Water-Intake-Tracker',
-      image: '/images/water-intake.png',
-    },
-    {
-      name: 'Bookmarking Site',
-      description: 'Save and organize your favorite links. Built with React and Django.',
-      tags: ['React', 'Django', 'Bookmarks'],
-      github: 'https://github.com/Anamikamahi18/Bookmarking-Site',
-      demo: 'https://github.com/Anamikamahi18/Bookmarking-Site',
-      image: '/images/bookmarking-site.png',
-    },
-    {
-      name: 'Calculator',
-      description: 'A simple calculator app built with React.',
-      tags: ['React', 'Calculator'],
-      github: 'https://github.com/Anamikamahi18/Calculator',
-      demo: 'https://github.com/Anamikamahi18/Calculator',
-      image: '/images/calculator.png',
-    },
-    {
-      name: 'Scientific Calculator',
-      description: 'A scientific calculator with advanced functions. Built with React.',
-      tags: ['React', 'Calculator', 'Science'],
-      github: 'https://github.com/Anamikamahi18/Scientific-Calculator',
-      demo: 'https://github.com/Anamikamahi18/Scientific-Calculator',
-      image: '/images/scientific-calculator.png',
+      name: 'Recipe Sharing Platform',
+      description: 'Share and discover recipes. Built with React and Django.',
+      tags: ['React', 'Django', 'Recipes'],
+      github: 'https://github.com/Anamikamahi18/Recipe-Sharing-Platform',
+      demo: 'https://github.com/Anamikamahi18/Recipe-Sharing-Platform',
     },
     {
       name: 'OTT Streaming Platform',
@@ -43,15 +18,27 @@ function Projects() {
       tags: ['React', 'Django', 'MySQL', 'Streaming', 'API'],
       github: 'https://github.com/Anamikamahi18/OTT-Streaming-Platform',
       demo: 'https://github.com/Anamikamahi18/OTT-Streaming-Platform',
-      image: '/images/ott-streaming.png',
     },
     {
-      name: 'Recipe Sharing Platform',
-      description: 'Share and discover recipes. Built with React and Django.',
-      tags: ['React', 'Django', 'Recipes'],
-      github: 'https://github.com/Anamikamahi18/Recipe-Sharing-Platform',
-      demo: 'https://github.com/Anamikamahi18/Recipe-Sharing-Platform',
-      image: '/images/recipe-sharing.png',
+      name: 'Daily Water Intake Tracker',
+      description: 'Track your daily water intake and hydration stats. Built with React and Django REST API.',
+      tags: ['React', 'Django', 'API', 'Health'],
+      github: 'https://github.com/Anamikamahi18/Water-Intake-Tracker',
+      demo: 'https://github.com/Anamikamahi18/Water-Intake-Tracker',
+    },
+    {
+      name: 'Bookmarking Site',
+      description: 'Save and organize your favorite links. Built with React and Django.',
+      tags: ['React', 'Django', 'Bookmarks'],
+      github: 'https://github.com/Anamikamahi18/Bookmarking-Site',
+      demo: 'https://github.com/Anamikamahi18/Bookmarking-Site',
+    },
+    {
+      name: 'Scientific Calculator',
+      description: 'A scientific calculator with advanced functions. Built with React.',
+      tags: ['React', 'Calculator', 'Science'],
+      github: 'https://github.com/Anamikamahi18/Scientific-Calculator',
+      demo: 'https://github.com/Anamikamahi18/Scientific-Calculator',
     },
   ];
 
@@ -62,9 +49,7 @@ function Projects() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, idx) => (
             <div key={idx} className="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-lg transition-shadow duration-300 p-6 flex flex-col">
-              {project.image && (
-                <img src={project.image} alt={project.name} className="w-full h-40 object-cover rounded mb-4" />
-              )}
+              {/* No image shown as requested */}
               <h3 className="font-semibold text-lg mb-2 text-blue-700 dark:text-white">{project.name}</h3>
               <p className="mb-2 text-gray-700 dark:text-gray-200">{project.description}</p>
               <div className="flex flex-wrap gap-2 mb-4">
