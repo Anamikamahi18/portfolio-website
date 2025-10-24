@@ -9,11 +9,7 @@ function Navbar({ dark, setDark }) {
     { href: "#projects", label: "Projects" },
     { href: "#experience", label: "Experience" },
   ];
-  const socialLinks = [
-    { href: "https://github.com/Anamikamahi18", label: "GitHub" },
-    { href: "https://linkedin.com/in/anamika-m-16a09321b", label: "LinkedIn" },
-    { href: "mailto:anamikamahi18@gmail.com", label: "Email" },
-  ];
+ 
 
   return (
     <nav className="fixed top-0 left-0 w-full bg-white dark:bg-gray-900 shadow z-50 transition-colors">
@@ -27,20 +23,7 @@ function Navbar({ dark, setDark }) {
             </li>
           ))}
         </ul>
-        {/* Social Links: always in a line */}
-        <div className="flex space-x-4 ml-6">
-          {socialLinks.map(link => (
-            <a
-              key={link.href}
-              href={link.href}
-              target={link.href.startsWith('http') ? "_blank" : undefined}
-              rel={link.href.startsWith('http') ? "noopener noreferrer" : undefined}
-              className="hover:text-blue-600 dark:hover:text-blue-400"
-            >
-              {link.label}
-            </a>
-          ))}
-        </div>
+       
         {/* Hamburger Icon for mobile/tablet */}
         <button
           className="md:hidden ml-4 p-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
