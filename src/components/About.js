@@ -43,7 +43,13 @@ function About() {
   ]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
-  // ...existing code...
+
+  const handleSend = async (e) => {
+    e.preventDefault();
+    if (!input.trim()) return;
+    setMessages([...messages, { from: "user", text: input }]);
+    setLoading(true);
+
     // Fuzzy match the question
     const userQ = input.trim().toLowerCase();
     let answer = null;
