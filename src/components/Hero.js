@@ -40,13 +40,6 @@ function Hero() {
   <p className="mb-4 text-center max-w-xl text-base sm:text-lg">I love building modern web applications and solving problems.</p>
   <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-4 w-full justify-center items-center">
           <a href="#projects" className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">View My Work</a>
-          <a
-            href="/ANAMIKA M-Resume.pdf"
-            download
-            className="bg-white border border-blue-600 text-blue-600 px-4 py-2 rounded hover:bg-blue-50 transition"
-          >
-            Download Resume
-          </a>
         </div>
   <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full justify-center items-center">
           <a href="https://github.com/Anamikamahi18" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600">GitHub</a>
