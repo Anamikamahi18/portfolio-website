@@ -16,7 +16,7 @@ function Contact() {
     const formData = new FormData(form.current);
     const data = Object.fromEntries(formData.entries());
     try {
-      await axios.post('https://portfolio-backend-1-zo7a.onrender.com/api/contact/', data);
+      await axios.post('https://portfolio-backend-mh6a.onrender.com/api/contact/', data);
       setSent(true);
     } catch (err) {
       setError("Failed to send message. Please try again later.");
