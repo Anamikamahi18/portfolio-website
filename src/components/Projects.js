@@ -30,15 +30,15 @@ function Projects() {
       name: 'Bookmarking Site',
       description: 'Save and organize your favorite links. Built with React and Django.',
       tags: ['React', 'Django', 'Bookmarks'],
-      github: 'https://github.com/Anamikamahi18/Bookmarking-Site',
-      demo: 'https://github.com/Anamikamahi18/Bookmarking-Site',
+      github: 'https://github.com/Anamikamahi18/personal-bookmarking-site',
+      demo: 'https://personal-bookmarking-site.vercel.app',
     },
     {
       name: 'Scientific Calculator',
       description: 'A scientific calculator with advanced functions. Built with React.',
       tags: ['React', 'Calculator', 'Science'],
-      github: 'https://github.com/Anamikamahi18/Scientific-Calculator',
-      demo: 'https://github.com/Anamikamahi18/Scientific-Calculator',
+      github: 'https://github.com/Anamikamahi18/scientific-calculator',
+      demo: 'https://scientific-calculator-six-nu.vercel.app/',
     },
   ];
 
