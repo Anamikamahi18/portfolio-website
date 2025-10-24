@@ -146,6 +146,6 @@ function About() {
       </div>
     </motion.section>
   );
-
+}
 
 export default About;
