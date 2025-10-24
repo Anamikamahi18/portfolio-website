@@ -18,7 +18,7 @@ function Contact() {
   try {
     await axios.post(
       'https://portfolio-backend-mh6a.onrender.com/api/contact/',
-      data,
+      JSON.stringify(data),
       { headers: { 'Content-Type': 'application/json' } }
     );
     setSent(true);
