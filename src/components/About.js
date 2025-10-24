@@ -96,16 +96,14 @@ function About() {
       viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 0.8, ease: 'easeOut' }}
     >
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center px-4 sm:px-8">
-        {/* Profile Photo with hover effect */}
-        <div className="flex justify-center mb-6 md:mb-0">
-          <img
-            src="/profile.png"
-            alt="Anamika M"
-            loading="lazy"
-            className="w-32 h-32 sm:w-40 sm:h-40 rounded-full object-cover border-4 border-white shadow-lg transition-transform duration-300 hover:scale-105"
-          />
-        </div>
+      <div className="container mx-auto flex flex-col md:flex-row gap-10 items-center px-4 sm:px-8">
+        {/* Single Profile Photo with hover effect */}
+        <img
+          src="/profile.png"
+          alt="Anamika M"
+          loading="lazy"
+          className="w-32 h-32 sm:w-40 sm:h-40 rounded-full object-cover border-4 border-white shadow-lg transition-transform duration-300 hover:scale-105 mb-6 md:mb-0"
+        />
         <div className="w-full max-w-xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-blue-700">About Me</h2>
           <p className="mb-2 text-base sm:text-lg">Hi, I'm <span className="font-semibold">Anamika M.</span></p>
