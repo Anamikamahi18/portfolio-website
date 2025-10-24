@@ -27,7 +27,7 @@ const ANAMIKA_FAQ = [
   { key: "internship", answer: "I interned at MashupStack as a Full Stack Developer." },
   { key: "interests", answer: "I enjoy building apps, learning new technologies, and solving real-world problems." },
   { key: "achievements", answer: "Completed several successful projects and internships. Always eager to learn and grow." },
-  { key: "contact", answer: "You can contact me at anamikamahi18@gmail.com or via the contact form below." },
+  { key: "contact", answer: "You can contact me at anamikamahi18@gmail.com" },
   { key: "resume", answer: "You can download my resume from the About section." },
   { key: "about", answer: "I am Anamika M, a full stack developer passionate about coding and technology." },
   { key: "profile", answer: "I am a full stack developer with experience in Python, Django, React, and AWS." },
