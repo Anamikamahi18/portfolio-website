@@ -9,20 +9,24 @@ function Contact() {
   const [loading, setLoading] = useState(false);
 
   const sendEmail = async (e) => {
-    e.preventDefault();
-    setError("");
-    setSent(false);
-    setLoading(true);
-    const formData = new FormData(form.current);
-    const data = Object.fromEntries(formData.entries());
-    try {
-      await axios.post('https://portfolio-backend-mh6a.onrender.com/api/contact/', data);
-      setSent(true);
-    } catch (err) {
-      setError("Failed to send message. Please try again later.");
-    }
-    setLoading(false);
-  };
+  e.preventDefault();
+  setError("");
+  setSent(false);
+  setLoading(true);
+  const formData = new FormData(form.current);
+  const data = Object.fromEntries(formData.entries());
+  try {
+    await axios.post(
+      'https://portfolio-backend-mh6a.onrender.com/api/contact/',
+      data,
+      { headers: { 'Content-Type': 'application/json' } }
+    );
+    setSent(true);
+  } catch (err) {
+    setError("Failed to send message. Please try again later.");
+  }
+  setLoading(false);
+};
 
   return (
     <motion.section
